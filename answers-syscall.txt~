@@ -1,0 +1,8 @@
+1. usertrap()
+2. = 0x10, I believe it represents the system execution code based on it being referenced
+as "SYS_exec" in initcode.S
+3. 0x22 which I'm guessing is supervisor mode
+4. a3
+5. The value 0 is used to indicate that the hart architecture mode is not implemented. The stval '0xd' indicates that there was a "Instruction address misaligned" which makes sense since we made the instruction address 0.
+6. The name of the bianary is initcode\000\000\000\000\000\000\000 the pid is 1
+   
